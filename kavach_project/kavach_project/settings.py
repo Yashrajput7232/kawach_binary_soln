@@ -26,6 +26,9 @@ SECRET_KEY = "django-insecure-($m1vo9)xs!19o%b#$_jnn=go3$0o=4+1wc1s_7ajpti(tjl5v
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CORS_ALLOWED_ORIGINS = [
+    "https://localhost:8000",
+]
 
 
 # Application definition
@@ -38,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "webapp",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -48,6 +52,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware"
 ]
 
 ROOT_URLCONF = "kavach_project.urls"

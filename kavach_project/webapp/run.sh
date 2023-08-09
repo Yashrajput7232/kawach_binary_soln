@@ -1,0 +1,1 @@
+lynis audit system > webapp/logs/report.txt

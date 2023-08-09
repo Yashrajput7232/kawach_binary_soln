@@ -6,6 +6,12 @@
     <title>Index File</title>
 </head>
 <body>
-    <button>Scan now</button>
+    <form action="/run_script" method="get">
+        <button type="submit">Scan Now</button>
+    </form>
+    <div>
+        <p>{{ output }}</p>
+        <p>{{ error }}</p>
+    </div>
 </body>
 </html>
